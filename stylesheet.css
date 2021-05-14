@@ -52,8 +52,13 @@ main > p a{
 .c{
   font-size:14px;
 }
+.kousin{
+  margin-top:50px;
+  width:50%;
+  margin:0 auto;
+}
 .icons{
-  margin-top:100px;
+  margin-top:50px;
   text-align:center;
 }
 .icons img{
