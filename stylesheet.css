@@ -78,3 +78,21 @@ footer{
   text-align:center;
   font-size:14px;
 }
+
+#title{
+  font-size:30px;
+}
+
+@media(max-width:480px){
+
+  .flex{
+    flex-wrap: wrap;
+  }
+  .box{
+    width:100%;
+  }
+  .icons img{
+    width:10%;
+  }
+
+}
