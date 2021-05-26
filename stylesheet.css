@@ -18,6 +18,7 @@ main > p{
 }
 .flex{
   display:flex;
+  flex-wrap:wrap;
 }
 .box{
   width:30%;
