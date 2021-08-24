@@ -125,12 +125,16 @@ main{
 .box img{
   width:100%;
   border:1px solid black;
+  transition-duration: 0.5s;
+}
+.box img:hover{
+  transform:scale(1.1);
 }
 .box a ,.box h3{
   color:black;
   transition-duration: 0.5s;
 }
-.box a:hover ,.box h3:hover{
+.box h3:hover{
   opacity:0.7;
 }
 .box2{
