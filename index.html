@@ -150,14 +150,8 @@
 <script>
 $(function(){
   //拡大登場
-      $('h1').css({"opacity":"0"});
-      $('h1').css({"transform":"scale(0)"});
-      $('.info').css({"opacity":"0"});
-      $('.info').css({"transform":"scale(0)"});
-      $('h1').css({"opacity":"1"});
-      $('h1').css({"transform":"scale(1)"});
-      $('.info').css({"opacity":"1"});
-      $('.info').css({"transform":"scale(1)"});
+      $('h1').hide().fadeIn().css({"transform":"scale(1)"});
+      $('.info').hide().fadeIn().css({"transform":"scale(1)"});
 
   //スクロールイン
       $(window).scroll(function (){
