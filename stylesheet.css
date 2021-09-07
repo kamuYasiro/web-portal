@@ -5,6 +5,7 @@ h1{
   text-align:center;
   margin:36px 0;
   transition-duration: 1s;
+	transform:scale(0);
 }
 main{
   padding-top:20px;
@@ -12,6 +13,7 @@ main{
 .info{
   transition-duration: 1.5s;
   transition-delay: 0.25s;
+	transform:scale(0);
 }
 .arrow_box{
   text-align: center;
