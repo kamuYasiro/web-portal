@@ -4,18 +4,14 @@ body{
 h1{
   text-align:center;
   margin:36px 0;
-  transform:scale(0);
   transition-duration: 1s;
-  opacity:0;
 }
 main{
   padding-top:20px;
 }
 .info{
-  transform:scale(0);
   transition-duration: 1.5s;
   transition-delay: 0.25s;
-  opacity:0;
 }
 .arrow_box{
   text-align: center;
