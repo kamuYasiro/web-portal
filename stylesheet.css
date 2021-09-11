@@ -4,16 +4,18 @@ body{
 h1{
   text-align:center;
   margin:36px 0;
+  transform:scale(0);
   transition-duration: 1s;
-	transform:scale(0);
+  opacity:0;
 }
 main{
   padding-top:20px;
 }
 .info{
+  transform:scale(0);
   transition-duration: 1.5s;
   transition-delay: 0.25s;
-	transform:scale(0);
+  opacity:0;
 }
 .arrow_box{
   text-align: center;
@@ -52,6 +54,15 @@ main{
   margin:0 auto;
   background-position:center;
   background-size:cover;
+}
+.icon:active{
+  animation:prunprun;
+}
+@keyframe prunprun {
+    48%,62% {transform:scale(1.0,1.0);}
+    50% {transform:scale(1.1,0.9);}
+    56% {transform:scale(0.9,1.1)translate(0,-5px);}
+    59% {tranform:scale(1.0,1.0)translate(0,-3px);}
 }
 .scrollicon {
  display: inline-block;
@@ -112,6 +123,7 @@ main{
   border-bottom:2px solid black;
   opacity:0;
   transition-duration: 1s;
+  transform: translateX(100px);
 }
 .box{
   width:30%;
@@ -119,6 +131,7 @@ main{
   margin-top:1%;
   opacity:0;
   transition-duration: 1s;
+  transform: translateY(100px);
 }
 .box img{
   width:100%;

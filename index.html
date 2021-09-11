@@ -97,17 +97,7 @@
       </div>
     </div>
     <div class="contents">
-      <h2 class="title">ドットインストール様講座動画参考</h2>
-      <div class="flex">
-        <div class="box">
-          <a href="https://kamuyasiro.github.io/Yasiro-portfolio/"><img src="Clip33.jpg"></a>
-          <a href="https://kamuyasiro.github.io/Yasiro-portfolio/"><h3>ポートフォリオサイト風</h3></a>
-          <p>創作活動用ポートフォリオサイト風のページです。</p>
-        </div>
-      </div>
-    </div>
-    <div class="contents">
-      <h2 class="title">その他webサイト様参考/アレンジコーディング</h2>
+      <h2 class="title">その他webサイト様参考/アレンジ</h2>
       <div class="flex">
         <div class="box">
           <a href="https://kamuyasiro.github.io/yamamuraya_copy/"><img src="Clip32.jpg"></a>
@@ -123,6 +113,16 @@
           <a href="https://kamuyasiro.github.io/Uber-Eats_copy/"><img src="Clip31.jpg"></a>
           <a href="https://kamuyasiro.github.io/Uber-Eats_copy/"><h3>Uber EatsのHP参考</h3></a>
           <p>Blender初心者のブログ風のページです。</p>
+        </div>
+        <div class="box">
+          <a href="https://kamuyasiro.github.io/Yasiro-portfolio/"><img src="Clip33.jpg"></a>
+          <a href="https://kamuyasiro.github.io/Yasiro-portfolio/"><h3>ポートフォリオサイト風</h3></a>
+          <p>(ドットインストール様の講座動画参考)</p>
+        </div>
+        <div class="box box2">
+          <a href="https://kamuyasiro.github.io/web-s-god_1/"><img src="Clip29.jpg"></a>
+          <a href="https://kamuyasiro.github.io/web-s-god_1/"><h3>WindowsXPのあの壁紙について</h3></a>
+          <p>(Webの神様様のYoutube動画参考)</p>
         </div>
       </div>
     </div>
@@ -150,8 +150,14 @@
 <script>
 $(function(){
   //拡大登場
-      $('h1').hide().fadeIn().css({"transform":"scale(1)"});
-      $('.info').hide().fadeIn().css({"transform":"scale(1)"});
+      $('h1').css({"opacity":"0"});
+      $('h1').css({"transform":"scale(0)"});
+      $('.info').css({"opacity":"0"});
+      $('.info').css({"transform":"scale(0)"});
+      $('h1').css({"opacity":"1"});
+      $('h1').css({"transform":"scale(1)"});
+      $('.info').css({"opacity":"1"});
+      $('.info').css({"transform":"scale(1)"});
 
   //スクロールイン
       $(window).scroll(function (){
@@ -161,6 +167,7 @@ $(function(){
           var windowHeight = $(window).height();
           if (scroll > elemPos - windowHeight + 200){
             $(this).css({"opacity":"1"});
+            $(this).css({"transform":"translateX(0)"});
           }
         });
       });
@@ -172,6 +179,7 @@ $(function(){
           var windowHeight = $(window).height();
           if (scroll > elemPos - windowHeight + 200){
             $(this).css({"opacity":"1"});
+            $(this).css({"transform":"translateY(0)"});
           }
         });
       });
