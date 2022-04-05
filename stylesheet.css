@@ -4,18 +4,18 @@ body{
 h1{
   text-align:center;
   margin:36px 0;
+  /* transition-duration: 1s;
+  opacity:0;
+  transform:scale(0); */
+}
+.info div{
+  opacity:0;
   transform:scale(0);
   transition-duration: 1s;
-  opacity:0;
 }
 main{
   padding-top:20px;
-}
-.info{
-  transform:scale(0);
-  transition-duration: 1.5s;
-  transition-delay: 0.25s;
-  opacity:0;
+  overflow: hidden;
 }
 .arrow_box{
   text-align: center;
@@ -49,16 +49,16 @@ main{
   top:114%;
 }
 .icon{
+  display:block;
   width:250px;
   height:150px;
   margin:0 auto;
   background-position:center;
   background-size:cover;
+
+  animation:prunprun 2.2s ease-in infinite;
 }
-.icon:active{
-  animation:prunprun;
-}
-@keyframe prunprun {
+@keyframes prunprun {
     48%,62% {transform:scale(1.0,1.0);}
     50% {transform:scale(1.1,0.9);}
     56% {transform:scale(0.9,1.1)translate(0,-5px);}
@@ -125,13 +125,20 @@ main{
   transition-duration: 1s;
   transform: translateX(100px);
 }
+.bigtitle {
+  border-bottom:4px solid black;
+}
 .box{
-  width:30%;
+  width:31.3%;
   margin-right:3%;
   margin-top:1%;
+  margin-bottom: 1%;
   opacity:0;
-  transition-duration: 1s;
-  transform: translateY(100px);
+  transition-duration: 0.5s;
+  transform: scale(0.5);
+}
+.flex .box:nth-of-type(3n){
+  margin-right:0;
 }
 .box img{
   width:100%;
@@ -142,11 +149,13 @@ main{
   transform:scale(1.1);
 }
 .box a ,.box h3{
+  margin-top: 6px;
+  margin-bottom:0;
   color:black;
   transition-duration: 0.5s;
 }
 .box h3:hover{
-  opacity:0.7;
+  opacity:0.5;
 }
 .box2{
   transition-delay: 100ms;
@@ -179,17 +188,55 @@ main > p a{
   border-radius:50%;
 }
 footer{
-  padding:24px 0;
+  padding:24px 0 0;
   background-color:rgb(233, 233, 233);
+  position:relative;
 }
 .kousin{
   width:80%;
   margin:0 auto;
 }
 .copy{
-  padding-top:20px;
+  margin-top:40px;
+  padding:16px 0;
   text-align:center;
   font-size:14px;
+  background-color: #333333;
+  color:white;
+}
+
+#top{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 20px;
+  bottom: 75px;
+  background: gray;
+  opacity: 0.6;
+  border-radius: 10%;
+}
+#top a{
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+}
+#top a::before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f102';
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -5px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
 }
 
 @media(max-width:1210px){
@@ -211,6 +258,18 @@ footer{
   }
   .arrow_box:after, .arrow_box:before {
     right:45%;
+  }
+}
+
+@media(max-width:768px){
+  .box{
+    width:48%;
+  }
+  .flex .box:nth-of-type(3n){
+    margin-right:3%;
+  }
+  .flex .box:nth-of-type(2n){
+    margin-right:0;
   }
 }
 

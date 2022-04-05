@@ -17,22 +17,22 @@
 <main>
   <div class="info">
     <div class="arrow_box">練習としてこれまでに制作したWebページの一覧です。<br>
-      本ページ含め、すべてCMSなど使わずの自力コーディングです。<br>
-      半分遊びなので内容は趣味全開ですが、<span class="b">コーディングレベルの参考</span>として、ぜひご覧ください。
+      本ページ含め、すべてCMSなど使わずの自力コーディングで作成しました。<br>
+      半分遊びなので内容は趣味全開ですが、<span class="b">コーディングレベルの参考</span>としてぜひご覧ください。
     </div>
-    <div class="icon" style="background-image: url(a.png);"></div>
-    <div class="scrollicon" id="scrollicon">
+    <a href="#start" class="icon" style="background-image: url(a.png);"></a>
+    <!-- <div class="scrollicon" id="scrollicon">
       <span class="txt">Scroll</span>
-    </div>
+    </div> -->
   </div>
-  <div class="inner">
-    <div class="contents">
+  <div class="inner" id="start">
+    <div class="contents" style="margin-top:96px;">
       <h2 class="title bigtitle">
         ■オリジナル
       </h2>
       <div class="flex">
         <div class="box">
-          <a href="https://kamuyasiro.github.io/touhou_LP_Re/"><img src="Clip6s.jpg"></a>
+          <a href="https://kamuyasiro.github.io/touhou_LP_Re/"><img src="Clip6s.jpg" style="padding-bottom:4.4%;"></a>
           <a href="https://kamuyasiro.github.io/touhou_LP_Re/"><h3>ランディングページ風</h3></a>
           <p>東方の世界観を詰め込んだ架空のページです。</p>
         </div>
@@ -106,7 +106,7 @@
       <div class="flex">
         <div class="box">
           <a href="https://kamuyasiro.github.io/yamamuraya_copy/"><img src="Clip32.jpg"></a>
-          <a href="https://kamuyasiro.github.io/yamamuraya_copy/"><h3>某お肉屋さんのHP一部参考</h3></a>
+          <a href="https://kamuyasiro.github.io/yamamuraya_copy/"><h3>やまむらや様のHP一部参考</h3></a>
           <p>綺麗な風景特集サイト風のページです。</p>
         </div>
         <div class="box box2">
@@ -116,24 +116,20 @@
         </div>
         <div class="box box3">
           <a href="https://kamuyasiro.github.io/Uber-Eats_copy/"><img src="Clip31.jpg"></a>
-          <a href="https://kamuyasiro.github.io/Uber-Eats_copy/"><h3>Uber EatsのHP参考</h3></a>
+          <a href="https://kamuyasiro.github.io/Uber-Eats_copy/"><h3>Uber Eats様のHP参考</h3></a>
           <p>Blender初心者のブログ風のページです。</p>
         </div>
         <div class="box">
           <a href="https://kamuyasiro.github.io/Yasiro-portfolio/"><img src="Clip33.jpg"></a>
-          <a href="https://kamuyasiro.github.io/Yasiro-portfolio/"><h3>ポートフォリオサイト風</h3></a>
-          <p>(ドットインストール様の講座動画参考)</p>
-        </div>
-        <div class="box box2">
-          <a href="https://kamuyasiro.github.io/web-s-god_1/"><img src="Clip29.jpg"></a>
-          <a href="https://kamuyasiro.github.io/web-s-god_1/"><h3>WindowsXPのあの壁紙について</h3></a>
-          <p>(Webの神様様のYoutube動画参考)</p>
+          <a href="https://kamuyasiro.github.io/Yasiro-portfolio/"><h3>ドットインストール様の講座動画参考</h3></a>
+          <p>ポートフォリオサイト風のページです。</p>
         </div>
       </div>
     </div>
 </main>
 <footer>
   <div class="kousin">
+    <p>2022.04.05：サイトデザインプチリニューアル</p>
     <p>2021.09.14：模写/アレンジ-『上級編-ギャラリーサイト／スクロールイベント』追加</p>
     <p>2021.08.23：サイトデザインプチリニューアル</p>
     <p>2021.07.15：模写/アレンジ-『中級編-ランディングページ風』追加</p>
@@ -142,30 +138,34 @@
     <p>2021.05.14：本Webページ公開/12コンテンツ追加</p>
     <p>2021.04.05：プログラミング学習開始</p>
   </div>
-  <div class="icons">
-    <a target="_blank" href="https://twitter.com/kamu_yasiro"><img src="twitter.png"></a>
-    <a target="_blank" href="https://www.youtube.com/channel/UCe_aIBknEp_XspcgoS_FFhw"><img src="youtube.png"></a>
-    <a target="_blank" href="https://www.nicovideo.jp/user/38447721"><img src="niconico.png"></a>
-    <a target="_blank" href="https://www.pixiv.net/users/9880258"><img src="pixiv.jpg"></a>
-  </div>
+
   <div class="copy">
-    &copy;2021-kamu_Yasiro
+    &copy;2022-kamu_Yasiro
   </div>
+
+  <div id="top"><a href="#"></a></div>
+
 </footer>
+
+<script src="https://kit.fontawesome.com/aec07eb893.js" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script>
 $(function(){
   //拡大登場
-      $('h1').css({"opacity":"0"});
-      $('h1').css({"transform":"scale(0)"});
-      $('.info').css({"opacity":"0"});
-      $('.info').css({"transform":"scale(0)"});
     $(window).load(function(){
-      $('h1').css({"opacity":"1"});
-      $('h1').css({"transform":"scale(1)"});
-      $('.info').css({"opacity":"1"});
-      $('.info').css({"transform":"scale(1)"});
+      // $('h1').css({"opacity":"1"});
+      // $('h1').css({"transform":"scale(1)"});
+      $('.arrow_box').css({"opacity":"1"});
+      $('.arrow_box').css({"transform":"scale(1)"});
     });
+
+  //#リンク
+      $('a[href^="#"]').click(function(){
+        let href=$(this).attr("href");
+        let target=$(href=="#" || href==""?'html':href);
+        let position=target.offset().top;
+        $("html,body").animate({scrollTop:position}, 600);
+      });
 
   //スクロールイン
       $(window).scroll(function (){
@@ -173,7 +173,7 @@ $(function(){
           var elemPos = $(this).offset().top;
           var scroll = $(window).scrollTop();
           var windowHeight = $(window).height();
-          if (scroll > elemPos - windowHeight + 200){
+          if (scroll > elemPos - windowHeight + 00){
             $(this).css({"opacity":"1"});
             $(this).css({"transform":"translateX(0)"});
           }
@@ -185,20 +185,9 @@ $(function(){
           var elemPos = $(this).offset().top;
           var scroll = $(window).scrollTop();
           var windowHeight = $(window).height();
-          if (scroll > elemPos - windowHeight + 200){
+          if (scroll > elemPos - windowHeight + 00){
             $(this).css({"opacity":"1"});
-            $(this).css({"transform":"translateY(0)"});
-          }
-        });
-      });
-
-      $(window).scroll(function (){
-        $('.scrollicon').each(function(){
-          var elemPos = $(this).offset().top;
-          var scroll = $(window).scrollTop();
-          var windowHeight = $(window).height();
-          if (scroll > elemPos - windowHeight + 200){
-            $(this).css({"opacity":"0"});
+            $(this).css({"transform":"scale(1)"});
           }
         });
       });
